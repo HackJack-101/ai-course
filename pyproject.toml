@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "courses"
+version = "0.1.0"
+description = ""
+authors = ["Jean BATISTA <j.batista@citron.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+instructor = "^1.7.9"
+openai = "^1.75.0"
+pytest = "^8.3.5"
+ruff = "^0.11.6"
+pydantic = "^2.11.3"
+langchain = "^0.3.23"
+langchain-ollama = "^0.3.2"
+langgraph = "^0.3.31"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+course-2 = 'courses.course_2.standardize_characters_in_text:main'
+course-3-dice = 'courses.course_3.reasoning:dice'
+course-3-physics = 'courses.course_3.reasoning:physics'
+course-4 = 'courses.course_4.weather:main'
