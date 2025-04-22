@@ -11,3 +11,6 @@ wheels/
 
 # JetBrains
 .idea
+
+# Custom
+response.py
