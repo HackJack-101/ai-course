@@ -14,3 +14,4 @@ wheels/
 
 # Custom
 response.py
+courses/config/open_weather.py
