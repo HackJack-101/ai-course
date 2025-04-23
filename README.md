@@ -38,13 +38,13 @@ Learn with Python the uses of local LLMs (via Ollama) using [instructor](https:/
 
 ### Installing `poetry` on macOS
 
-1**Install `poetry`**:
+1. **Install `poetry`**:
    Run the following command to install `poetry`:
    ```bash
    curl -sSL https://install.python-poetry.org | python3 -
    ```
 
-2**Verify the installation**:
+2. **Verify the installation**:
    After installation, confirm that `poetry` is installed by checking its version:
    ```bash
    poetry --version
