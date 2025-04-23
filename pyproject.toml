@@ -15,6 +15,7 @@ pydantic = "^2.11.3"
 langchain = "^0.3.23"
 langchain-ollama = "^0.3.2"
 langgraph = "^0.3.31"
+neo4j = "^5.28.1"
 
 
 [build-system]
@@ -27,3 +28,4 @@ course-3-dice = 'courses.course_3.reasoning:dice'
 course-3-physics = 'courses.course_3.reasoning:physics'
 course-4 = 'courses.course_4.weather:main'
 course-4-here = 'courses.course_4.weather_here:main'
+course-5 = 'courses.course_5.movies:main'
