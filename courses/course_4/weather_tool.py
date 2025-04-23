@@ -20,7 +20,7 @@ def get_current_weather(location: str) -> Dict:
     api_key = get_api_key()
     base_url = "https://api.openweathermap.org/data/2.5/weather"
 
-    print(f"Fetching weather data for {location}...")
+    print(f"Fetching weather data for: {location}")
 
     try:
         params = {

@@ -1,5 +1,6 @@
 import sys
 
+from langchain_core.prompts import MessagesPlaceholder
 from langchain_ollama import ChatOllama
 from langchain.prompts import ChatPromptTemplate
 from langgraph.prebuilt import create_react_agent
@@ -20,11 +21,13 @@ def ask_weather_using_ollama(location: str):
         DO NOT make up weather information on your own.
         """,
             ),
-            ("placeholder", "{messages}"),
+            MessagesPlaceholder("messages"),
         ]
     )
 
-    agent_executor = create_react_agent(llm, [get_current_weather], prompt=prompt)
+    agent_executor = create_react_agent(
+        llm, [get_current_weather], prompt=prompt, debug=False
+    )
     query = f"I am in: {location}. Do I neet to wear a rain coat?"
     messages = agent_executor.invoke(
         {

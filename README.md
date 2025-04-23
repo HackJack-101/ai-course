@@ -60,6 +60,7 @@ Download the binary [here](https://ollama.com/download)
 For this course, you will need 2 LLMs via ollama: 
 - **mistral**: `ollama pull mistral:latest`
 - **phi4-mini**: `ollama pull phi4-mini:latest`
+- **llama3.1:8b**: `ollama pull llama3.1:8b`
 
 If you want to play with other models, you can install:
 - **granite3.3:8b**: `ollama pull granite3.3:8b`

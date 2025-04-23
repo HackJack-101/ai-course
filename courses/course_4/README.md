@@ -18,3 +18,4 @@ We are using tools with LLM to get current weather data in a given location.
 
 - The system message can be modified if you need
 - The temperature can be modified if you need
+- You can change `debug` to `True`
