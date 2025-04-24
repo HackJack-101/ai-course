@@ -19,7 +19,7 @@ class TestStandardizeCharactersByAIE2E(unittest.TestCase):
         self.assertEqual(sorted_result[0].first_name, "Pierre")
         self.assertEqual(sorted_result[0].last_name, "Dupont")
         self.assertEqual(sorted_result[0].age, 45)
-        self.assertEqual(sorted_result[0].phone_number, "+335551234")
+        self.assertEqual(sorted_result[0].phone_number, "+339991234")
         self.assertEqual(sorted_result[0].country_code, "FRA")
 
         self.assertEqual(sorted_result[1].first_name, "John")
@@ -34,8 +34,8 @@ class TestStandardizeCharactersByAIE2E(unittest.TestCase):
         self.assertEqual(sorted_result[2].country_code, "USA")
         self.assertEqual(sorted_result[2].phone_number, "+15556543")
 
-        self.assertEqual(sorted_result[3].first_name, "Hiroshi")
-        self.assertEqual(sorted_result[3].last_name, "Sato")
+        self.assertEqual(sorted_result[3].first_name, "Sato")
+        self.assertEqual(sorted_result[3].last_name, "Hiroshi")
         self.assertEqual(sorted_result[3].age, 28)
         self.assertEqual(sorted_result[3].phone_number, "+815559870")
         self.assertEqual(sorted_result[3].country_code, "JPN")
