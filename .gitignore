@@ -13,6 +13,5 @@ wheels/
 .idea
 
 # Custom
-response.py
 courses/config/open_weather.py
 courses/config/neo4j_credentials.py
